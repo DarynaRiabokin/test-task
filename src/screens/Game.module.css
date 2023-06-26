@@ -1,0 +1,78 @@
+.container {
+    background: url('/table-texture.jpeg') no-repeat 50% 50%;
+    width: 100dvw;
+    height: 100dvh;
+    object-fit: cover;
+}
+
+.pileContainer {
+    display:flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    gap: 40px;
+}
+
+.pile {
+    width: 360px;
+    height: 360px;
+    background: url('/pile-of-matches.png') no-repeat 50% 50%;
+    object-fit: contain;
+}
+
+.matchCount {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.computer, 
+.player {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.playerWrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    width: 100%;
+}
+
+.computer > span,
+.player > span {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.match {
+    height: 100px;
+    width: 8px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+}
+
+.match > img {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    height: inherit;
+    width: auto;
+}
